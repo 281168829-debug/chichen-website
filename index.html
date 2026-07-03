@@ -10,13 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/factory.png');
             background-size: cover;
             background-position: center;
         }
         .brand-orange { color: #FF6B00; }
         .bg-brand-orange { background-color: #FF6B00; }
         html { scroll-behavior: smooth; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
@@ -28,9 +41,12 @@
             <a href="#" class="hover:text-orange-500 transition">Home</a>
             <a href="#products" class="hover:text-orange-500 transition">Products</a>
             <a href="#about" class="hover:text-orange-500 transition">R&D Strength</a>
+            <a href="#video" class="hover:text-orange-500 transition">Showcase</a>
             <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
         </div>
-        <a href="#contact" class="bg-brand-orange text-white px-6 py-2 rounded-sm text-sm font-bold hover:bg-orange-600 transition">REQUEST QUOTE</a>
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="bg-brand-orange text-white px-6 py-2 rounded-sm text-sm font-bold hover:bg-orange-600 transition tracking-tighter">REQUEST QUOTE</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -39,7 +55,7 @@
             <div class="inline-block bg-orange-600 text-xs font-bold px-3 py-1 mb-6 tracking-widest uppercase">Belt and Road Initiative Partner</div>
             <h1 class="text-5xl md:text-7xl font-extrabold mb-6">ENGINEERING THE FUTURE OF <span class="brand-orange">BRUSHLESS</span> POWER</h1>
             <p class="text-xl text-gray-300 mb-10 leading-relaxed">High-Torque, Heat-Resistant Cordless Solutions <br class="hidden md:block"> Optimized for Middle East Construction & Industrial Projects.</p>
-            <div class="flex flex-col md:row justify-center gap-4">
+            <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="#products" class="bg-brand-orange px-10 py-4 font-bold text-lg hover:bg-orange-600 transition">VIEW CATALOG</a>
                 <a href="https://wa.me/8613821866076?text=Hi%20CHICHEN%2C%20I%20am%20interested%20in%20your%20brushless%20power%20tools." target="_blank" class="border border-white px-10 py-4 font-bold text-lg hover:bg-white hover:text-black transition">
                     <i class="fab fa-whatsapp mr-2"></i>TALK TO EXPERT
@@ -69,8 +85,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <!-- Product 1 -->
                 <div class="bg-black p-8 border border-gray-800 hover:border-orange-500 transition-all duration-300 group">
-                    <div class="h-64 bg-gray-800 mb-8 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-tools text-7xl text-gray-700 group-hover:text-orange-500 transition duration-500"></i>
+                    <div class="h-64 mb-8 flex items-center justify-center relative overflow-hidden bg-white">
+                        <img src="assets/grinder.png" alt="21V Brushless Angle Grinder" class="max-h-full object-contain group-hover:scale-110 transition duration-500">
                         <div class="absolute top-4 left-4 bg-orange-600 text-[10px] font-bold px-2 py-1">BEST SELLER</div>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">21V Brushless Angle Grinder</h3>
@@ -83,11 +99,11 @@
                 </div>
                 <!-- Product 2 -->
                 <div class="bg-black p-8 border border-gray-800 hover:border-orange-500 transition-all duration-300 group">
-                    <div class="h-64 bg-gray-800 mb-8 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-bolt text-7xl text-gray-700 group-hover:text-orange-500 transition duration-500"></i>
+                    <div class="h-64 mb-8 flex items-center justify-center relative overflow-hidden bg-white">
+                        <img src="assets/wrench_280n.jpg" alt="CD2008 Professional Impact Wrench" class="max-h-full object-contain group-hover:scale-110 transition duration-500">
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">High-Torque Impact Wrench</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">1200N.m Max Torque. Designed for heavy machinery maintenance and bridge construction.</p>
+                    <h3 class="text-2xl font-bold mb-3">CD2008 Professional Impact Wrench</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">280N.m Max Torque. Compact and high-efficiency for automotive and daily construction.</p>
                     <ul class="text-xs text-gray-500 mb-8 space-y-2">
                         <li><i class="fas fa-check text-orange-500 mr-2"></i>All-Metal Gearbox</li>
                         <li><i class="fas fa-check text-orange-500 mr-2"></i>Precision 3-Speed Control</li>
@@ -96,11 +112,11 @@
                 </div>
                 <!-- Product 3 -->
                 <div class="bg-black p-8 border border-gray-800 hover:border-orange-500 transition-all duration-300 group">
-                    <div class="h-64 bg-gray-800 mb-8 flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-microchip text-7xl text-gray-700 group-hover:text-orange-500 transition duration-500"></i>
+                    <div class="h-64 mb-8 flex items-center justify-center relative overflow-hidden bg-white">
+                        <img src="assets/drill_1305.jpg" alt="CD1305 Brushless Drill Driver" class="max-h-full object-contain group-hover:scale-110 transition duration-500">
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">21V Brushless Drill Driver</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Compact yet powerful. Features the latest CHICHEN intelligent battery management system.</p>
+                    <h3 class="text-2xl font-bold mb-3">CD1305 Brushless Drill Driver</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">High-performance brushless motor. Features the latest CHICHEN intelligent battery management system for precise control.</p>
                     <ul class="text-xs text-gray-500 mb-8 space-y-2">
                         <li><i class="fas fa-check text-orange-500 mr-2"></i>20+3 Torque Settings</li>
                         <li><i class="fas fa-check text-orange-500 mr-2"></i>Keyless Metal Chuck</li>
@@ -111,57 +127,72 @@
         </div>
     </section>
 
+    <!-- Video Showcase Section -->
+    <section id="video" class="py-24 bg-black px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter">Field Performance</h2>
+                <p class="text-gray-500">Watch our high-torque impact wrench in action.</p>
+            </div>
+            <div class="video-container border border-gray-800 shadow-2xl">
+                <video controls preload="metadata">
+                    <source src="assets/wrench_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
     <!-- About / R&D Section -->
-    <section id="about" class="py-24 bg-black px-8">
+    <section id="about" class="py-24 bg-gray-900 px-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-4xl font-extrabold mb-8 uppercase tracking-tighter">Why CHICHEN Tools?</h2>
                 <p class="text-gray-300 mb-6 leading-relaxed text-lg">With over 15 years of focus on brushless technology, CHICHEN has become a trusted partner for industrial suppliers across Southeast Asia and the Middle East.</p>
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <div class="flex items-start">
-                        <div class="bg-orange-600 p-2 mr-4 rounded-sm"><i class="fas fa-industry"></i></div>
+                        <div class="bg-orange-600 p-3 mr-4 rounded-sm shadow-lg"><i class="fas fa-industry"></i></div>
                         <div>
-                            <h4 class="font-bold">Smart Manufacturing</h4>
-                            <p class="text-sm text-gray-500">Automated assembly lines ensuring 99.9% product consistency.</p>
+                            <h4 class="font-bold text-xl">Smart Manufacturing</h4>
+                            <p class="text-sm text-gray-500">Automated assembly lines ensuring 99.9% product consistency and high-speed fulfillment.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-orange-600 p-2 mr-4 rounded-sm"><i class="fas fa-shield-alt"></i></div>
+                        <div class="bg-orange-600 p-3 mr-4 rounded-sm shadow-lg"><i class="fas fa-shield-alt"></i></div>
                         <div>
-                            <h4 class="font-bold">Strict QC Process</h4>
-                            <p class="text-sm text-gray-500">Every single tool undergoes a 30-minute stress test before shipping.</p>
+                            <h4 class="font-bold text-xl">Strict QC Process</h4>
+                            <p class="text-sm text-gray-500">Every single tool undergoes a 30-minute high-load stress test before final packaging.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-gray-800 h-48 rounded-sm"></div>
-                <div class="bg-gray-800 h-48 rounded-sm translate-y-8"></div>
-                <div class="bg-gray-800 h-48 rounded-sm"></div>
-                <div class="bg-gray-800 h-48 rounded-sm translate-y-8"></div>
+                <img src="assets/factory.png" alt="Factory" class="w-full h-64 object-cover rounded-sm border border-gray-800 shadow-lg">
+                <img src="assets/workshop.png" alt="Workshop" class="w-full h-64 object-cover rounded-sm border border-gray-800 shadow-lg translate-y-8">
+                <div class="bg-gray-800 h-64 rounded-sm flex items-center justify-center text-gray-600 italic">Advanced R&D Center</div>
+                <div class="bg-gray-800 h-64 rounded-sm flex items-center justify-center text-gray-600 italic translate-y-8">Global Shipping Hub</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gray-900 px-8">
+    <section id="contact" class="py-24 bg-black px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-extrabold mb-6 uppercase tracking-tighter">Global Business Inquiry</h2>
             <p class="text-gray-400 mb-12">Submit your requirements and our regional sales manager will contact you within 12 hours.</p>
             
-            <!-- Integration: Use Forminit for actual email delivery -->
             <form action="https://app.forminit.com/f/smaa4xfduqs" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div>
                     <label class="text-xs uppercase font-bold text-gray-500 mb-2 block">Full Name</label>
-                    <input type="text" name="name" required class="w-full bg-black border border-gray-800 p-4 focus:border-orange-500 outline-none transition">
+                    <input type="text" name="name" required class="w-full bg-gray-900 border border-gray-800 p-4 focus:border-orange-500 outline-none transition">
                 </div>
                 <div>
                     <label class="text-xs uppercase font-bold text-gray-500 mb-2 block">Company Email</label>
-                    <input type="email" name="email" required class="w-full bg-black border border-gray-800 p-4 focus:border-orange-500 outline-none transition">
+                    <input type="email" name="email" required class="w-full bg-gray-900 border border-gray-800 p-4 focus:border-orange-500 outline-none transition">
                 </div>
                 <div class="md:col-span-2">
                     <label class="text-xs uppercase font-bold text-gray-500 mb-2 block">Message / Product Interests</label>
-                    <textarea name="message" required placeholder="Example: Interested in 500 units of 21V Grinder for Saudi market..." class="w-full bg-black border border-gray-800 p-4 focus:border-orange-500 outline-none h-32 transition"></textarea>
+                    <textarea name="message" required placeholder="Example: Interested in 500 units of 21V Grinder for Saudi market..." class="w-full bg-gray-900 border border-gray-800 p-4 focus:border-orange-500 outline-none h-32 transition"></textarea>
                 </div>
                 <button type="submit" class="bg-brand-orange py-5 font-bold md:col-span-2 hover:bg-orange-600 transition uppercase tracking-widest text-lg shadow-xl">Submit Inquiry</button>
             </form>
