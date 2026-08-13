@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHICHEN | Professional Cordless Power Tools for European Industry</title>
-    <meta name="description" content="Tianjin Chichen Trading Co., Ltd. — 60+ cordless brushless tools across 15 categories. CE & RoHS compliant. Professional-grade power tools for construction, metalworking and automotive.">
+    <title>CHICHEN | Cordless Garden & Power Tools for US & European Markets</title>
+    <meta name="description" content="Tianjin Chichen Trading Co., Ltd. — cordless mini chainsaws, pruning shears, blowers and 60+ tools on one 21V battery platform. CE, RoHS & UL compliant. OEM/ODM for distributors across the US and Europe.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23E30613'/><text x='16' y='23' font-size='20' font-family='Arial Black' font-weight='900' fill='white' text-anchor='middle'>C</text></svg>">
     <link rel="canonical" href="https://www.chichen-tools.com/">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,6 +20,33 @@
         html { scroll-behavior: smooth; }
         .product-card:hover { border-color: var(--eu-red); transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
+
+    <!-- Google Analytics 4 (GDPR consent-gated) -->
+    <script>
+        window.GA4_ID = "G-7TZGSKSWWX";
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        function loadGA4() {
+            if (!window.GA4_ID) return;
+            gtag('js', new Date());
+            gtag('config', window.GA4_ID);
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_ID;
+            document.head.appendChild(s);
+        }
+        function hideCookieBanner() {
+            var b = document.getElementById('cookie-banner');
+            if (b) b.style.display = 'none';
+        }
+        function grantConsent() { localStorage.setItem('chichen_consent', 'yes'); loadGA4(); hideCookieBanner(); }
+        function denyConsent() { localStorage.setItem('chichen_consent', 'no'); hideCookieBanner(); }
+        document.addEventListener('DOMContentLoaded', function () {
+            var c = localStorage.getItem('chichen_consent');
+            if (c === 'yes') { loadGA4(); }
+            else if (c !== 'no') { var b = document.getElementById('cookie-banner'); if (b) b.style.display = 'block'; }
+        });
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -50,12 +78,12 @@
     <!-- Hero Section -->
     <header class="hero-gradient h-[80vh] flex items-center px-6 md:px-12 relative overflow-hidden">
         <div class="max-w-4xl">
-            <div class="inline-block bg-eu-red text-white text-[10px] font-black px-3 py-1 mb-6 tracking-[0.2em] uppercase">European Market Edition · 60+ Cordless Tools</div>
+            <div class="inline-block bg-eu-red text-white text-[10px] font-black px-3 py-1 mb-6 tracking-[0.2em] uppercase">US & EU Market Edition · 60+ Cordless Tools</div>
             <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-none tracking-tight">
                 ENGINEERED FOR <br><span class="text-eu-red italic">PROFESSIONAL</span> TRADES.
             </h1>
             <p class="text-xl text-gray-200 mb-10 max-w-2xl font-light">
-                Tianjin Chichen Trading Co., Ltd. — supplying high-performance cordless tools to distributors and wholesalers across Europe, the Middle East, and Southeast Asia.
+                Tianjin Chichen Trading Co., Ltd. — supplying high-performance cordless garden and power tools to distributors, wholesalers and e-commerce sellers across the United States and Europe.
             </p>
             <div class="flex flex-wrap gap-4">
                 <a href="#products" class="bg-white text-black px-10 py-4 font-black text-sm uppercase tracking-widest hover:bg-eu-red hover:text-white transition">Explore Products</a>
@@ -69,7 +97,7 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-8 text-[11px] font-black tracking-widest text-gray-500 uppercase">
             <div class="flex items-center gap-2"><i class="fas fa-certificate text-eu-red text-lg"></i> CE Compliant</div>
             <div class="flex items-center gap-2"><i class="fas fa-recycle text-eu-red text-lg"></i> RoHS Verified</div>
-            <div class="flex items-center gap-2"><i class="fas fa-bolt text-eu-red text-lg"></i> FC Electromagnetic</div>
+            <div class="flex items-center gap-2"><i class="fas fa-bolt text-eu-red text-lg"></i> UL Certified</div>
             <div class="flex items-center gap-2"><i class="fas fa-industry text-eu-red text-lg"></i> ISO 9001 Facility</div>
         </div>
     </section>
@@ -83,37 +111,48 @@
                 <div class="h-1 w-24 bg-eu-red mx-auto mt-6"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Product 1: CD2028 Impact Wrench — Heavy Duty -->
-                <div class="product-card bg-white p-8 border-2 border-gray-100 shadow-xl shadow-gray-100 text-center">
-                    <div class="h-64 mb-8 flex items-center justify-center bg-gray-50 overflow-hidden p-6 rounded-sm">
-                        <img src="assets/wrench_cd2026.jpg" alt="CD2028 Industrial Impact Wrench" class="max-h-full object-contain">
-                    </div>
-                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Heavy Duty</span>
-                    <h3 class="text-2xl font-black mb-4">CD2028 1500N·m Wrench</h3>
-                    <p class="text-sm text-gray-500 mb-8 px-4">1500N·m breakaway torque. The strongest 21V impact wrench in the CHICHEN lineup — built for truck tires, steel structures, and industrial fastening.</p>
-                    <a href="#contact" class="inline-block border-2 border-black px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition w-full">View Specs →</a>
-                </div>
-
-                <!-- Product 2: DL25 Chainsaw — Outdoor Power -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+                <!-- Product 1: DL-23 4" Mini Chainsaw — One-Hand Power -->
                 <div class="product-card bg-white p-8 border-2 border-eu-red shadow-xl shadow-gray-200 text-center">
                     <div class="h-64 mb-8 flex items-center justify-center bg-gray-50 overflow-hidden p-6 rounded-sm">
-                        <img src="assets/saw_dl25.jpg" alt="DL25 Brushless Chainsaw" class="max-h-full object-contain">
+                        <img src="assets/saw_dl23_4in.jpg" alt="DL-23 4 Inch Cordless Mini Chainsaw" class="max-h-full object-contain">
                     </div>
-                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Outdoor Power</span>
-                    <h3 class="text-2xl font-black mb-4">DL25 4800 RPM Chainsaw</h3>
-                    <p class="text-sm text-gray-500 mb-8 px-4">4800 RPM. 7.1 m/s chain speed. One hand operation. The go-to tool for arborists, landscapers, and construction crews who need cordless freedom without sacrificing power.</p>
+                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">One-Hand Power</span>
+                    <h3 class="text-2xl font-black mb-4">DL-23 4" Mini Chainsaw</h3>
+                    <p class="text-sm text-gray-500 mb-8 px-4">12V brushless mini chainsaw with a compact 4-inch bar — one-hand operation for pruning, trimming and light firewood. 6.2 m/s chain speed with tool-free tensioning.</p>
                     <a href="#contact" class="inline-block bg-eu-red text-white px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-black transition w-full">View Specs →</a>
                 </div>
 
-                <!-- Product 3: EB008 Blower — Jobsite Cleanup -->
+                <!-- Product 2: DL-14 8" Mini Chainsaw — Outdoor Power -->
                 <div class="product-card bg-white p-8 border-2 border-gray-100 shadow-xl shadow-gray-100 text-center">
                     <div class="h-64 mb-8 flex items-center justify-center bg-gray-50 overflow-hidden p-6 rounded-sm">
-                        <img src="assets/blower_eb008.jpg" alt="EB008 Brushless Blower" class="max-h-full object-contain">
+                        <img src="assets/saw_dl14_8in.jpg" alt="DL-14 8 Inch Cordless Mini Chainsaw" class="max-h-full object-contain">
                     </div>
-                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Jobsite Cleanup</span>
-                    <h3 class="text-2xl font-black mb-4">EB008 34 m/s Blower</h3>
-                    <p class="text-sm text-gray-500 mb-8 px-4">34 m/s wind speed · 13 m³/min airflow. The most powerful brushless blower in the 21V class — clears wet leaves, snow, and dust silently, instantly, cordlessly.</p>
+                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Outdoor Power</span>
+                    <h3 class="text-2xl font-black mb-4">DL-14 8" Mini Chainsaw</h3>
+                    <p class="text-sm text-gray-500 mb-8 px-4">21V brushless with an 8-inch bar and auxiliary side handle for two-handed control. 5.8 m/s chain speed — the go-to tool for arborists and landscapers.</p>
+                    <a href="#contact" class="inline-block border-2 border-black px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition w-full">View Specs →</a>
+                </div>
+
+                <!-- Product 3: CD-612 Pruning Shears — Tree Care -->
+                <div class="product-card bg-white p-8 border-2 border-gray-100 shadow-xl shadow-gray-100 text-center">
+                    <div class="h-64 mb-8 flex items-center justify-center bg-gray-50 overflow-hidden p-6 rounded-sm">
+                        <img src="assets/pruner_neutral.jpg" alt="CD-612 40mm Cordless Pruning Shears" class="max-h-full object-contain">
+                    </div>
+                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Tree Care</span>
+                    <h3 class="text-2xl font-black mb-4">CD-612 40mm Pruning Shears</h3>
+                    <p class="text-sm text-gray-500 mb-8 px-4">One-hand cordless pruner with SK5 steel blades cutting branches up to 40 mm. 21V brushless motor, 60A discharge — instant, effortless cuts.</p>
+                    <a href="#contact" class="inline-block border-2 border-black px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition w-full">View Specs →</a>
+                </div>
+
+                <!-- Product 4: EB-008 Blower — Cleanup Power -->
+                <div class="product-card bg-white p-8 border-2 border-gray-100 shadow-xl shadow-gray-100 text-center">
+                    <div class="h-64 mb-8 flex items-center justify-center bg-gray-50 overflow-hidden p-6 rounded-sm">
+                        <img src="assets/blower_rt1688.jpg" alt="EB-008 34m/s Brushless Leaf Blower" class="max-h-full object-contain">
+                    </div>
+                    <span class="text-eu-red text-[10px] font-black tracking-widest uppercase">Cleanup Power</span>
+                    <h3 class="text-2xl font-black mb-4">EB-008 34 m/s Blower</h3>
+                    <p class="text-sm text-gray-500 mb-8 px-4">The most powerful brushless blower in the 21V class — 34 m/s wind speed, 13 m³/min airflow. Clears wet leaves, snow and dust silently, instantly, cordlessly.</p>
                     <a href="#contact" class="inline-block border-2 border-black px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition w-full">View Specs →</a>
                 </div>
             </div>
@@ -123,7 +162,7 @@
                     <p class="text-2xl font-black text-gray-900 uppercase tracking-tight mb-2">ONE BATTERY. 15+ TOOLS.</p>
                     <p class="text-gray-500 text-sm">Every CHICHEN 21V tool shares the same battery. Build your fleet without buying extra chargers.</p>
                 </div>
-                <p class="text-gray-400 italic mb-6">Explore 60+ cordless tools across 15 categories — all powered by one 21V battery platform. Hedge trimmers, chainsaws, blowers, impact wrenches, rotary hammers, and more.</p>
+                <p class="text-gray-400 italic mb-6">Mini chainsaws, pruning shears, blowers, hedge trimmers and chain saws — 60+ cordless tools across 15 categories, all powered by one 21V battery platform.</p>
                 <a href="#contact" class="text-eu-red font-black uppercase tracking-widest text-sm hover:underline">Request full catalog →</a>
             </div>
         </div>
@@ -140,10 +179,10 @@
                 <span class="text-eu-red text-xs font-black tracking-widest uppercase mb-4 block">Corporate Profile</span>
                 <h2 class="text-4xl font-black text-gray-900 uppercase tracking-tighter mb-8">About Tianjin Chichen Trading</h2>
                 <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                    Based in the industrial hub of Tianjin, <strong>Tianjin Chichen Trading Co., Ltd.</strong> is a premier global supplier of high-performance cordless power tools. We serve distributors and wholesalers across the European market and the "Belt and Road" regions with products that meet rigorous quality standards.
+                    Based in the industrial hub of Tianjin, <strong>Tianjin Chichen Trading Co., Ltd.</strong> is a premier global supplier of high-performance cordless power tools. We serve distributors, wholesalers and e-commerce sellers across the United States and Europe with products that meet rigorous quality standards.
                 </p>
                 <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                    Our products are CE, RoHS, and FC certified, manufactured in ISO 9001-compliant facilities. We focus on the ONE 21V battery platform — a single battery that powers 60+ tools across 15 categories, reducing inventory complexity for our partners.
+                    Our products are CE, RoHS, and UL certified, manufactured in ISO 9001-compliant facilities. We focus on the ONE 21V battery platform — a single battery that powers 60+ tools across 15 categories, reducing inventory complexity for our partners.
                 </p>
                 <p class="text-gray-600 text-lg leading-relaxed mb-10">
                     Every CHICHEN tool undergoes a full-load stress test before packaging. We stand behind our products with responsive after-sales support and a commitment to continuous improvement.
@@ -180,6 +219,10 @@
                 </div>
                 <input type="text" name="company" placeholder="Company Name & Country" class="w-full bg-gray-800 border-none py-5 px-6 focus:ring-2 focus:ring-eu-red outline-none transition text-sm">
                 <textarea name="message" placeholder="Technical requirements or bulk order quantity..." required class="w-full bg-gray-800 border-none py-5 px-6 focus:ring-2 focus:ring-eu-red outline-none transition text-sm h-32"></textarea>
+                <label class="flex items-start gap-3 text-xs text-gray-400 leading-relaxed">
+                    <input type="checkbox" name="consent" required class="mt-1">
+                    <span>I agree that my details will be processed in accordance with the <a href="privacy.html" class="underline decoration-eu-red hover:text-white">Privacy Policy</a> to receive a commercial offer.</span>
+                </label>
                 <button type="submit" class="w-full bg-eu-red text-white py-5 font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-300 text-lg shadow-2xl">Submit Request</button>
             </form>
         </div>
@@ -194,9 +237,9 @@
             </div>
             <div class="flex flex-col md:items-end gap-4">
                 <div class="flex space-x-8 text-[10px] font-black uppercase tracking-widest text-gray-500">
-                    <a href="mailto:info@chichen-tools.com" class="hover:text-eu-red transition underline decoration-eu-red">chichen2580@gmail.com</a>
-                    <a href="#" class="hover:text-eu-red transition">Terms</a>
-                    <a href="#" class="hover:text-eu-red transition">Privacy</a>
+                    <a href="mailto:chichen2580@gmail.com" class="hover:text-eu-red transition underline decoration-eu-red">chichen2580@gmail.com</a>
+                    <a href="terms.html" class="hover:text-eu-red transition">Terms</a>
+                    <a href="privacy.html" class="hover:text-eu-red transition">Privacy</a>
                 </div>
                 <div class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
                     © 2026 TIANJIN CHICHEN TRADING CO., LTD. | <a href="https://www.chichen-tools.com" class="hover:text-eu-red transition">www.chichen-tools.com</a>
@@ -204,6 +247,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner (GDPR) -->
+    <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#111111; color:#fff; z-index:100; padding:14px 24px; font-size:12px; line-height:1.6;">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <span class="text-gray-300">We use cookies to understand how visitors use this website. Analytics cookies are only set after you accept. Read our <a href="privacy.html" class="underline text-eu-red hover:text-white">Privacy Policy</a>.</span>
+            <div class="flex gap-3 shrink-0">
+                <button onclick="grantConsent()" class="bg-eu-red text-white px-6 py-2 font-black uppercase tracking-widest text-[10px] hover:bg-white hover:text-black transition">Accept</button>
+                <button onclick="denyConsent()" class="border border-gray-500 text-gray-300 px-6 py-2 font-black uppercase tracking-widest text-[10px] hover:border-white hover:text-white transition">Decline</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
